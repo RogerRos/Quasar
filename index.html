@@ -115,20 +115,23 @@
         footer p {
             font-size: 18px;
         }
-        .video-section {
-            background-color: #111;
-            color: #fff;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .video-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        video {
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            border-radius: 10px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+        .modal-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            max-height: 80%;
         }
     </style>
 </head>
@@ -151,7 +154,8 @@
     <div class="hero-content">
         <h2>Inversiones Inteligentes</h2>
         <p>Descubre cómo nuestra IA potente maximiza tus inversiones de manera elegante y eficiente.</p>
-        <a href="#" class="btn">Comienza Ahora</a>
+        <a href="#" class="btn" id="comienza-ahora">Comienza Ahora</a>
+        <a href="#" class="btn" id="ver-video">Ver Video</a>
     </div>
 </section>
 
@@ -174,11 +178,36 @@
     <p>&copy; 2024 Quasar - Todos los derechos reservados.</p>
 </footer>
 
-<section class="video-section">
-    <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iVRTtsGCkSU" frameborder="0" allowfullscreen></iframe>
-    </div>
-</section>
+<!-- Modal para mostrar el video -->
+<div class="modal">
+    <div class="modal-video"></div>
+</div>
+
+<script>
+    // Función para mostrar el modal y reproducir el video
+    function mostrarVideo() {
+        const modal = document.querySelector('.modal');
+        const videoWrapper = document.querySelector('.modal-video');
+        modal.style.display = 'block'; // Muestra el modal
+        videoWrapper.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/iVRTtsGCkSU" frameborder="0" allowfullscreen></iframe>';
+    }
+
+    // Función para cerrar el modal al hacer clic fuera del video
+    function cerrarModal() {
+        const modal = document.querySelector('.modal');
+        const videoWrapper = document.querySelector('.modal-video');
+        modal.style.display = 'none'; // Oculta el modal
+        videoWrapper.innerHTML = ''; // Detiene y elimina el video
+    }
+
+    // Agrega un evento de clic al botón "Ver Video"
+    const verVideoBtn = document.getElementById('ver-video');
+    verVideoBtn.addEventListener('click', mostrarVideo);
+
+    // Agrega un evento de clic para cerrar el modal al hacer clic fuera del video
+    const modal = document.querySelector('.modal');
+    modal.addEventListener('click', cerrarModal);
+</script>
 
 </body>
 </html>
