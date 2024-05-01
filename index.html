@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quasar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #fff;
+        }
+        /* Estilo específico para la palabra "Quasar" */
+        .menu-item-quasar {
+            font-family: 'Roboto', sans-serif; /* Cambia la tipografía */
+            font-size: 20px; /* Tamaño ligeramente más grande */
+            font-weight: bold;
+            color: #fff; /* Color blanco */
+        }
+        .menu-item-quasar:hover {
+            color: #ffcc00; /* Color amarillo al pasar el mouse */
+        }
+        .hero {
+            background-image: url('background.jpg');
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero-content {
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .hero-content h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .hero-content p {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ffcc00;
+            color: #222;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e6b800;
+        }
+        .features {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .feature {
+            max-width: 400px;
+            margin: 0 auto 40px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .feature h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 40px 0;
+        }
+        footer p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item-quasar">Quasar</a></li>
+            <li><a href="#" class="menu-item">Tu Cartera</a></li>
+            <li><a href="#" class="menu-item">¿Qué es Quasar?</a></li>
+            <li><a href="#" class="menu-item">Descubre</a></li>
+            <li><a href="#" class="menu-item">FAQs</a></li>
+            <li><a href="#" class="menu-item">Soporte</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Inversiones Inteligentes</h2>
+        <p>Descubre cómo nuestra IA potente maximiza tus inversiones de manera elegante y eficiente.</p>
+        <a href="#" class="btn">Comienza Ahora</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h3>Inteligencia Artificial Avanzada</h3>
+        <p>Nuestra IA analiza datos en tiempo real para optimizar tus inversiones de manera inteligente y precisa.</p>
+    </div>
+    <div class="feature">
+        <h3>Asesoramiento Personalizado</h3>
+        <p>Recibe recomendaciones adaptadas a tu perfil de inversión de forma exclusiva y personalizada.</p>
+    </div>
+    <div class="feature">
+        <h3>Acceso las 24/7</h3>
+        <p>Invierte y consulta tu portafolio desde cualquier lugar y en cualquier momento con total comodidad.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Quasar - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
