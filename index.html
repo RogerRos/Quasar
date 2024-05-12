@@ -3,211 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quasar</title>
+    <title>IgualadaSat - CanSat</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #222;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            background-color: #111;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-        nav ul li {
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #ccc;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #fff;
-        }
-        .menu-item-quasar {
-            font-family: 'Roboto', sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-            color: #fff;
-        }
-        .menu-item-quasar:hover {
-            color: #ffcc00;
-        }
-        .hero {
-            background-image: url('background.jpg');
-            background-size: cover;
-            height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-        }
-        .hero-content {
-            max-width: 800px;
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-        }
-        .hero-content h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .hero-content p {
-            font-size: 24px;
-            line-height: 1.5;
-            margin-bottom: 30px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #ffcc00;
-            color: #222;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 20px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #e6b800;
-        }
-        .features {
-            padding: 80px 0;
-            text-align: center;
-        }
-        .feature {
-            max-width: 400px;
-            margin: 0 auto 40px;
-            padding: 30px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-        }
-        .feature h3 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #111;
-            color: #ccc;
-            text-align: center;
-            padding: 40px 0;
-        }
-        footer p {
-            font-size: 18px;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-        }
-        .modal-video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 80%;
-            max-height: 80%;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-
 <header>
     <nav>
         <ul>
-            <li><a href="#" class="menu-item-quasar">Quasar</a></li>
-            <li><a href="#" class="menu-item">Tu Cartera</a></li>
-            <li><a href="#" class="menu-item">¿Qué es Quasar?</a></li>
-            <li><a href="#" class="menu-item">Descubre</a></li>
-            <li><a href="#" class="menu-item">FAQs</a></li>
-            <li><a href="#" class="menu-item">Soporte</a></li>
+            <li><a href="#" class="menu-item-quasar">IgualadaSat</a></li>
+            <li><a href="#" class="menu-item">Misión</a></li>
+            <li><a href="#" class="menu-item">Tecnología</a></li>
+            <li><a href="#" class="menu-item">Equipo</a></li>
+            <li><a href="#" class="menu-item">Socios</a></li>
+            <li><a href="#" class="menu-item">Contacto</a></li>
         </ul>
     </nav>
 </header>
 
 <section class="hero">
     <div class="hero-content">
-        <h2>Inversiones Inteligentes</h2>
-        <p>Descubre cómo nuestra IA potente maximiza tus inversiones de manera elegante y eficiente.</p>
-        <a href="#" class="btn" id="comienza-ahora">Comienza Ahora</a>
-        <a href="#" class="btn" id="ver-video">Ver Video</a>
+        <h2>Explorando el Universo con IgualadaSat</h2>
+        <p>Nuestra misión es democratizar el acceso al espacio exterior mediante tecnología CanSat accesible y avanzada.</p>
+        <a href="#" class="btn">Descubre Más</a>
+        <a href="#" class="btn" id="ver-video">Ver Misión</a>
+    </div>
+</section>
+
+<section class="image-preview">
+    <h3>Nuestro Trabajo en Imágenes</h3>
+    <div class="image-container" data-aos="fade-left">
+        <a href="details1.html">
+            <div class="placeholder-image"></div>
+            <p>Imagen de ejemplo 1</p>
+        </a>
+    </div>
+    <div class="image-container" data-aos="fade-left" data-aos-delay="100">
+        <a href="details2.html">
+            <div class="placeholder-image"></div>
+            <p>Imagen de ejemplo 2</p>
+        </a>
+    </div>
+    <div class="image-container" data-aos="fade-left" data-aos-delay="200">
+        <a href="details3.html">
+            <div class="placeholder-image"></div>
+            <p>Imagen de ejemplo 3</p>
+        </a>
+    </div>
+    <div class="image-container" data-aos="fade-left">
+        <a href="details4.html">
+            <div class="placeholder-image"></div>
+            <p>Imagen de ejemplo 4</p>
+        </a>
+    </div>
+    <div class="image-container" data-aos="fade-left" data-aos-delay="100">
+        <a href="details5.html">
+            <div class="placeholder-image"></div>
+            <p>Imagen de ejemplo 5</p>
+        </a>
+    </div>
+    <div class="image-container" data-aos="fade-left" data-aos-delay="200">
+        <a href="details6.html">
+            <div class="placeholder-image"></div>
+            <p>Imagen de ejemplo 6</p>
+        </a>
     </div>
 </section>
 
 <section class="features">
-    <div class="feature">
-        <h3>Inteligencia Artificial Avanzada</h3>
-        <p>Nuestra IA analiza datos en tiempo real para optimizar tus inversiones de manera inteligente y precisa.</p>
+    <div class="feature" data-aos="fade-up">
+        <h3>Innovación Tecnológica</h3>
+        <p>Desarrollamos satélites miniaturizados con la más alta tecnología para estudios atmosféricos y experimentos espaciales.</p>
     </div>
-    <div class="feature">
-        <h3>Asesoramiento Personalizado</h3>
-        <p>Recibe recomendaciones adaptadas a tu perfil de inversión de forma exclusiva y personalizada.</p>
+    <div class="feature" data-aos="fade-up" data-aos-delay="150">
+        <h3>Educación y Colaboración</h3>
+        <p>Colaboramos con instituciones educativas para formar a las próximas generaciones de ingenieros aeroespaciales.</p>
     </div>
-    <div class="feature">
-        <h3>Acceso las 24/7</h3>
-        <p>Invierte y consulta tu portafolio desde cualquier lugar y en cualquier momento con total comodidad.</p>
+    <div class="feature" data-aos="fade-up" data-aos-delay="300">
+        <h3>Accesibilidad</h3>
+        <p>Nuestro objetivo es hacer que la tecnología espacial sea accesible para investigadores y educadores de todo el mundo.</p>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Quasar - Todos los derechos reservados.</p>
+    <p>&copy; 2024 IgualadaSat - Todos los derechos reservados.</p>
 </footer>
 
-<!-- Modal para mostrar el video -->
 <div class="modal">
     <div class="modal-video"></div>
 </div>
 
 <script>
-    // Función para mostrar el modal y reproducir el video
-    function mostrarVideo() {
+    AOS.init(); // Inicializa las animaciones AOS
+
+    document.getElementById('ver-video').addEventListener('click', function(event) {
+        event.preventDefault();
         const modal = document.querySelector('.modal');
         const videoWrapper = document.querySelector('.modal-video');
-        modal.style.display = 'block'; // Muestra el modal
-        videoWrapper.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/iVRTtsGCkSU" frameborder="0" allowfullscreen></iframe>';
-    }
+        modal.style.display = 'block';
+        videoWrapper.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>';
+    });
 
-    // Función para cerrar el modal al hacer clic fuera del video
-    function cerrarModal() {
-        const modal = document.querySelector('.modal');
-        const videoWrapper = document.querySelector('.modal-video');
-        modal.style.display = 'none'; // Oculta el modal
-        videoWrapper.innerHTML = ''; // Detiene y elimina el video
-    }
-
-    // Agrega un evento de clic al botón "Ver Video"
-    const verVideoBtn = document.getElementById('ver-video');
-    verVideoBtn.addEventListener('click', mostrarVideo);
-
-    // Agrega un evento de clic para cerrar el modal al hacer clic fuera del video
-    const modal = document.querySelector('.modal');
-    modal.addEventListener('click', cerrarModal);
+    document.querySelector('.modal').addEventListener('click', function() {
+        this.style.display = 'none';
+        this.querySelector('.modal-video').innerHTML = '';
+    });
 </script>
-
 </body>
 </html>
